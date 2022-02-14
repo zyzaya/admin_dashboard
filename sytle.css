@@ -60,6 +60,27 @@
 
 .header {
   grid-area: 1 / 2 / 2 / -1;
+  padding: 20px;
+}
+
+.search {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content 1fr repeat(3, min-content);
+  column-gap: 15px;
+  padding-bottom: 20px;
+}
+
+.search span {
+  white-space: nowrap;
+}
+
+.search input {
+  border-radius: 12px;
+  outline: hidden;
+  border: none;
+  background-color: lightslategray;
+  margin-right: 30%;
 }
 
 .content {
