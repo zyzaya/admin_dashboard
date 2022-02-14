@@ -65,7 +65,6 @@
 
 .search {
   display: grid;
-  grid-auto-flow: column;
   grid-template-columns: min-content 1fr repeat(3, min-content);
   column-gap: 15px;
   padding-bottom: 20px;
@@ -81,6 +80,34 @@
   border: none;
   background-color: lightslategray;
   margin-right: 30%;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: min-content 1fr repeat(3, min-content);
+  column-gap: 15px;
+}
+
+.profile > div {
+  align-self: center;
+}
+
+.greeting {
+  font-size: small;
+}
+
+.name {
+  font-size: x-large;
+}
+
+.profile > button {
+  color: white;
+  border-radius: 16px;
+  background: #0ea5e9;
+  border: none;
+  height: 2rem;
+  align-self: center;
+  padding: 0 20px;
 }
 
 .content {
