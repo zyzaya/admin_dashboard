@@ -78,7 +78,7 @@
   border-radius: 12px;
   outline: hidden;
   border: none;
-  background-color: lightslategray;
+  background-color: rgb(164, 190, 216);
   margin-right: 30%;
 }
 
@@ -113,8 +113,9 @@
 .content {
   grid-area: 2 / 2 / -1 / -1;
   display: grid;
-  grid-template: 1fr 1fr / 1fr min-content;
+  grid-template: 1fr 1fr / 3fr 1fr;
   background-color: rgb(164, 190, 216);
+  padding: 20px;
 }
 
 .projects {
@@ -123,7 +124,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-self: start;
   gap: 15px;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .projects > div {
@@ -143,6 +144,7 @@
 
 .summary {
   color: lightslategrey;
+  font-size: small;
 }
 
 .buttons {
@@ -155,6 +157,27 @@
 
 .announcements {
   grid-area: 1 / 2 / 2 / -1;
+  display: grid;
+  border-radius: 9px;
+  background-color: white;
+}
+
+.announcements > div {
+  padding: 15%;
+  font-size: small;
+  overflow: hidden;
+}
+
+.announcement-summary {
+  
+  color: lightslategrey;
+}
+
+.announcements > section {
+  background-color: rgb(164, 190, 216);
+  height: 2px;
+  width: 70%;
+  margin: auto;
 }
 
 .trending {
