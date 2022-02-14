@@ -1,6 +1,12 @@
+@font-face {
+  font-family: roboto;
+  src: url(Roboto-Medium.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: roboto;
 }
 
 div {
@@ -16,8 +22,30 @@ div {
 
 .dashboard {
   grid-area: 1 / 1 / -1 / 2;
-  background-color: lightskyblue;
+  background-color: #0ea5e9;
+  width: 170px;
+  font-size: large;
   display: grid;
+  color: white;
+  grid-template-rows: 4rem repeat(6, 2rem) 4rem repeat(3, 2rem);
+  padding: 15px;
+}
+
+.dashboard > div:first-child {
+  font-size: x-large;
+}
+
+.dashboard > div:first-child > svg {
+  width: 200%;
+  height: 200%;
+}
+
+.dashboard > div {
+  margin: auto 0;
+}
+
+.dashboard > div > svg {
+  margin: 0 5px;
 }
 
 .header {
